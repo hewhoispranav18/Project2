@@ -1,0 +1,135 @@
+body {
+  width:100%;
+    background: linear-gradient(to top,rgba(0,0,0,0.5)10%),url(kiit.jpeg);
+    background-position: center;
+    background-size:contain;
+    height:109vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.sun {
+    text-align: center;
+    font-weight: 900;
+  /* background: linear-gradient(
+    135deg,
+    #022c22,
+    #047857,
+    #10b981,
+    #6ee7b7
+); */
+background: linear-gradient(
+    135deg,
+    rgba(245, 230, 211, 0.75),
+    rgba(255, 255, 255, 0.75)
+);
+    border-radius: 50%;
+    height: 100vh;
+    aspect-ratio: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+       animation: sunrise 5s ease-out forwards;
+}
+@keyframes sunrise {
+  from {
+    transform: translateY(110vh);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.sun h1 {
+   font-family:cursive;
+    color:rgb(1, 17, 1);
+    font-size: 30px;
+    margin: 0;
+    transition: 0.5s ease-in-out ;
+}
+.sun h1:hover{
+  cursor: pointer;
+  color:#022c22;
+}
+.sun p {
+ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     color:rgb(3, 37, 3);
+    font-size: 20px;
+    margin-top: 10px;
+}
+ #two{
+  letter-spacing: 1px;
+   font-family:cursive;
+  /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+color:antiquewhite;
+font-size: larger;
+height:100px;
+font-size: 50px;
+width:300px;
+border-radius: 20px;
+background: linear-gradient(135deg, #022c22, #059669, #34d399);
+transition: 3s ease-in-out;
+}
+button :hover{
+  color:black;
+  cursor: pointer;
+}
+@keyframes blinkButton {
+    0%, 100% {
+        opacity: 1;
+        box-shadow: 0 0 0px #34d399;
+    }
+
+    50% {
+        opacity: 0.8;
+        box-shadow: 0 0 30px #34d399;
+        color:black;
+    }
+}
+
+#two {
+animation: blinkButton 4.5s ease-in-out infinite;
+}
+h1 {
+    color: #064e3b;
+    position: relative;
+    animation: glitter 1.5s ease-in-out infinite;
+}
+
+@keyframes glitter {
+    0%, 100% {
+        text-shadow:
+            0 0 2px #ffffff,
+            0 0 5px #34d399;
+    }
+
+    50% {
+        text-shadow:
+            0 0 5px #ffffff,
+            0 0 15px #34d399,
+            0 0 25px #6ee7b7;
+    }
+}
+p{
+    color: #064e3b;
+    position: relative;
+    animation: glitter 1.5s ease-in-out infinite;
+}
+
+@keyframes glitter {
+    0%, 100% {
+        text-shadow:
+            0 0 2px #ffffff,
+            0 0 5px #34d399;
+    }
+
+    50% {
+        text-shadow:
+            0 0 5px #ffffff,
+            0 0 15px #34d399,
+            0 0 25px #6ee7b7;
+    }
+}
